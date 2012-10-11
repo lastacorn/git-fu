@@ -1,6 +1,4 @@
-GeneratedFiles/
-*.user
-*.suo
-*.sdf
-*.ncb
-*.opensdf
+Makefile
+Makefile.*
+_output/
+
