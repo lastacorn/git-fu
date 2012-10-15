@@ -32,7 +32,7 @@ CONFIGURE_FILE(
 
 # Disable unwanted libgit2 options and include it.
 SET(BUILD_CLAR OFF CACHE BOOL "Force disable of libgit2's CLAR testing")
-SET(STDCALL OFF CACHE BOOL "Don't use stdcall calling convention since libgit2 doesn't properly export the symbols as such")
+#SET(STDCALL OFF CACHE BOOL "Don't use stdcall calling convention since libgit2 doesn't properly export the symbols as such")
 ADD_SUBDIRECTORY(submodules/libgit2)
 MESSAGE(STATUS "Added submodules/libgit2. bin:${libgit2_BINARY_DIR} src:${libgit2_SOURCE_DIR}")
 INCLUDE_DIRECTORIES(${libgit2_SOURCE_DIR}/include)
