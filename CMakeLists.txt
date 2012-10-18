@@ -82,10 +82,21 @@ INCLUDE_DIRECTORIES("${PROJECT_BINARY_DIR}")
 INCLUDE_DIRECTORIES(${CMAKE_CURRENT_BINARY_DIR})
 
 # -------- Sources & resources --------
-SET(gitfu_SOURCES main.cpp gitfu.cpp)
-SET(gitfu_HEADERS gitfu.h)
-SET(gitfu_UI gitfu.ui)
-SET(gitfu_RESOURCES gitfu.qrc)
+SET(gitfu_SOURCES 
+	main.cpp 
+	gitfu.cpp
+	repository/repository.cpp
+	repository/tree.cpp
+	)
+SET(gitfu_HEADERS 
+	gitfu.h
+	)
+SET(gitfu_UI 
+	gitfu.ui
+	)
+SET(gitfu_RESOURCES 
+	gitfu.qrc
+	)
 
 # -------- More Qt setup --------
 QT4_WRAP_CPP(gitfu_HEADERS_MOC ${gitfu_HEADERS})
